@@ -9,7 +9,7 @@ from ..timeserver import TimeServer
 router = APIRouter()
 
 class TimeRetrieve(BaseModel):
-    time: str | datetime
+    time: str 
 
 
 @router.get("/get_time", response_model=TimeRetrieve)
